@@ -7,6 +7,7 @@
 
 .navbar img {
   width: 195px;
+  cursor: pointer;
 }
 
 .navbar ul {
@@ -31,17 +32,35 @@
 }
 
 .navbar svg {
-    display: none;
+  display: none;
+  cursor: pointer;
 }
 
+.navbar svg:hover {
+  color: rgb(66, 72, 189);
+}
+
+.navbar svg:active {
+  color: rgb(251, 133, 22);
+}
+
+/* laptop view */
 @media (max-width: 1439px) {
-.navbar {
-  padding: 18px 50px;
+  .navbar {
+    padding: 18px 50px;
+  }
 }
+
+/* tablet view */
 @media (max-width: 991px) {
-    .navbar svg {
-        display: none;
-    }
+  .navbar ul {
+    display: none;
+  }
+  .navbar svg {
+    display: block;
+  }
 }
+
+/* phone view */
 @media (max-width: 767px) {
 }

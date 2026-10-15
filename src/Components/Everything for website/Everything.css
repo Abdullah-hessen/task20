@@ -1,0 +1,129 @@
+.everything {
+  background: linear-gradient(to right, rgb(66, 72, 189), rgb(43, 108, 212));
+  padding: 20px 382.5px 60px 382.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.everything .content {
+  padding-top: 110px;
+  width: 502px;
+}
+
+.everything .content p.dontMiss {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(251, 133, 22);
+}
+
+.everything .content p.dontMiss span {
+  color: white;
+  width: 100%;
+}
+
+.everything .content h1 {
+  margin: 20px 0 80px 0;
+  color: white;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 71px;
+}
+
+.getStarted {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 50px;
+}
+
+.getStarted button {
+  padding: 12px 34px;
+  margin-bottom: 9px;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  background-color: rgb(251, 133, 22);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.getStarted button:hover {
+  background-color: white;
+  color: rgb(66, 72, 189);
+}
+
+.getStarted p {
+  width: 150px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32.4px;
+}
+
+.getStarted p span {
+  color: rgb(251, 133, 22);
+}
+
+.everything .img {
+  padding-top: 60px;
+  width: 600px;
+}
+
+.everything .img img {
+  width: 100%;
+}
+
+/* laptop view */
+@media (max-width: 1439px) {
+  .everything {
+    padding: 20px 50px 60px;
+  }
+  .everything .content {
+    width: 409px;
+  }
+  .everything .content p.dontMiss {
+    width: 409px;
+  }
+  .everything .content h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 66px;
+  }
+}
+
+/* tablet view */
+@media (max-width: 991px) {
+  .everything {
+    display: block;
+    padding: 0 50px 60px;
+  }
+  .everything .content {
+    padding-top: 80px;
+    width: 100%;
+  }
+  .everything .content p.dontMiss {
+    width: 100%;
+  }
+  .getStarted {
+    width: 100%;
+    gap: 130px;
+  }
+}
+
+/* phone view */
+@media (max-width: 767px) {
+  .everything .content h1 {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+  .getStarted {
+    display: block;
+  }
+  .getStarted button {
+    margin-bottom: 60px;
+  }
+  .everything .img {
+    width: 345px;
+  }
+}

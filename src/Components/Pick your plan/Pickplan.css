@@ -1,0 +1,77 @@
+.plansection {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
+.plansection h2.pickplan {
+  margin-bottom: 100px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52.8px;
+  text-align: center;
+}
+
+.plansection .plans {
+  padding: 0 382.5px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 65px;
+}
+
+.plansection .plans .plan {
+  text-align: center;
+  width: 222px;
+}
+
+.plansection .plans .plan img {
+  width: 88px;
+  margin-bottom: 30px;
+}
+
+.plansection .plans .plan h3 {
+  color: rgb(17, 17, 17);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+}
+
+.plansection .plans .plan p {
+  font-size: 18px;
+  line-height: 32.4px;
+  margin: 20px 0 30px 0;
+}
+
+.plansection .plans .plan svg {
+  transition: 1s;
+}
+
+.plansection .plans .plan svg:hover {
+  transform: translate(0, -15px);
+}
+
+/* laptop view */
+@media (max-width: 1439px) {
+  .plansection .plans {
+    padding: 0 50px;
+  }
+}
+
+/* tablet view */
+@media (max-width: 991px) {
+  .plansection .plans {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .plansection .plans .plan {
+    width: calc((100% - 80px) / 2);
+  }
+}
+
+/* phone view */
+@media (max-width: 767px) {
+  .plansection .plans .plan {
+    width: 100%;
+  }
+}
